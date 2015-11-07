@@ -17,7 +17,7 @@
 
   <body>
 
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+      <nav class="navbar navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -28,10 +28,13 @@
           </button>
           <a class="navbar-brand" href="#">Happy City</a>
         </div>
+        <div class="navbar-right">
+			<?php if (@$userData['first_name']) { ?>
+                Salut <?= $userData['first_name'] ?>, <?= $userData['location']['name'] ?>
+            <?php } else { ?>
+                <a href="<?= $loginUrl ?>">Login with Facebook</a>
+            <?php } ?>          
+        </div>
       </div>
     </nav>
-    <?php if (@$userData['first_name']) { ?>
-                        Salut <?= $userData['first_name'] ?>, <?= $userData['location']['name'] ?>
-                <?php } else { ?>
-                        <a href="<?= $loginUrl ?>">Login with Facebook</a>
-                <?php } ?>
+ 
