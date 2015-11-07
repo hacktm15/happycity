@@ -17,7 +17,7 @@
 
   <body>
 
-      <nav class="navbar navbar-default navbar-fixed-top">
+      <nav class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -26,7 +26,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">Happy City</a>
+          <a class="navbar-brand" href="/">
+		<img src="/assets/img/logo.png" alt="Happy City">
+          </a>
         </div>
         <div class="navbar-right">
 		<p class="welcome">
