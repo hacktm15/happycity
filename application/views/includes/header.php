@@ -34,7 +34,7 @@
                 <br>
                 Prieteni care au completat deja surveyul
                 <?php foreach ($friends as $val) { ?>
-                  <?= $val['name'] ?> <?php $val['avatar'] ?>, 
+                  <?= $val['name'] ?> <img src="<?= $val['avatar'] ?>">, 
                 <?php } ?>
 
             <?php } else { ?>
