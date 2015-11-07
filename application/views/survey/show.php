@@ -3,9 +3,10 @@
 
     <div class="container">
 
-        <div class="row">
+        <div class="row">        
 
             <p>Pe o scară de la 1 la 5, cu 1 fiind 'Dezacord Total' și 5 fiind 'Acord Total', te rugăm să răspunzi la următoarele întrebări:</p>
+            <?php $this->view('includes/friends'); ?>
 
             <form action="/survey/submit" method="post">
             <?php foreach ($questions as $id => $text): ?>
