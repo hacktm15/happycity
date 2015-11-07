@@ -9,7 +9,8 @@ class Welcome extends Application {
     {
         $data['current'] = 'login';
 
-        if (isset($_SESSION['facebook_access_token'])) {
+        $facebook_access_token = $this->session->userdata('facebook_access_token');
+        if ($facebook_access_token) {
             $response = $this->fb->get('/me?fields=friends');
             $fbData = $response->getDecodedBody();
             var_dump($fbData);
