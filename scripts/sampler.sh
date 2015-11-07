@@ -1,0 +1,1 @@
+curl -i -XPOST 'http://happycity.xyz:8086/write?db=test' --data-binary 'metric_name,city=Cluj,question_id=2 value=5'
