@@ -14,7 +14,7 @@ footer {
 
 .navbar-default {
 	background-color: #ffffff;
-        border: 0;
+    border: 0;
 }
 
 .trend-positive,
@@ -49,22 +49,31 @@ footer {
     padding-top: 100px;
     margin: 0;
 }
+
 .welcome i{
     font-size: 1.5em;
     margin-right: 5px;
 }
+
 .welcome a{
 	text-decoration: none;
 }
+
 .welcome img {
     border-radius: 6px;
 	width: 50px;
 	margin-right: 5px;
 }
 
+.welcome-logged{
+    padding-top: 80px;
+    font-size: 1.5em;
+}
+
 .friends img {
 	width: 50px;
 	margin-right: 3px;
+    border-radius: 6px;
 }
 
 .navbar-brand {
@@ -93,7 +102,18 @@ h2 {
     border: 0;
 }
 
+.btn-primary:focus,
 .btn-primary:active,
 .btn-primary:hover {
     background-color: #ec4d2c;
+}
+
+p.indice {
+    font-size: 240px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    color: #009eb4;
+    text-align: right;
+    margin-right: 10px;
 }

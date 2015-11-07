@@ -54,7 +54,7 @@ class Survey extends Application {
 
     public function thankyou()
     {
-        $this->load->view('survey/thankyou');
+        $this->load->view('survey/thankyou', $this->sharedData);
     }
 
     private function getLocation( $location )
