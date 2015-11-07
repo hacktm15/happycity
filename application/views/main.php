@@ -46,7 +46,7 @@
 				<div class="col-md-6 trend-positive"><h2>+10%</h2></div>
 			</div>
 			<div class="embed-responsive embed-responsive-4by3">
-	            <iframe src="http://happycity.xyz:3000/dashboard-solo/db/curiosity?panelId=1&fullscreen&from=1446884495001&to=1446906095001&theme=light" width="450" height="200" frameborder="0"></iframe>
+	            <iframe src="http://happycity.xyz:3000/dashboard-solo/db/curiosity?panelId=1&fullscreen&from=1446884495001&to=1446906095001&theme=dark" width="450" height="200" frameborder="0"></iframe>
 			</div>
 		</div>
 
@@ -56,7 +56,7 @@
 				<div class="col-md-6 trend-negative"><h2>-5,23%</h2></div>
 			</div>
 			<div class="embed-responsive embed-responsive-4by3">
-	            <iframe src="http://happycity.xyz:3000/dashboard-solo/db/curiosity?panelId=1&fullscreen&from=1446884495001&to=1446906095001&theme=light" width="450" height="200" frameborder="0"></iframe>
+	            <iframe src="http://happycity.xyz:3000/dashboard-solo/db/curiosity?panelId=1&fullscreen&from=1446884495001&to=1446906095001&theme=dark" width="450" height="200" frameborder="0"></iframe>
 			</div>
 		</div>
 

@@ -12,6 +12,7 @@ $config['questions'] = [
     5 => 'Din punct de vedere tehnologic, orasul este genial.'
 ];
 
+$config['influx_endpoint_read'] = 'http://happycity.xyz:8086/query?';
 $config['influx_endpoint'] = 'http://happycity.xyz:8086/write?db=test';
 $config['influx_metric'] = 'metric_name';
 
