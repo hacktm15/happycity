@@ -11,14 +11,14 @@ class Application extends CI_Controller {
     {
         parent::__construct();
         $this->fb = new Facebook\Facebook([
-            'app_id' => '559352467574102',
-            'app_secret' => '89b78e834e4d0a8707748c44cd1d1150',
-            'default_graph_version' => 'v2.5',
+            'app_id' => $this->config->item('fb_app_id'),
+            'app_secret' => $this->config->item('fb_secret'),
+            'default_graph_version' => $this->config->item('default_graph_version'),
         ]);
 
         $this->fbHelper = $this->fb->getRedirectLoginHelper();
         $permissions = ['email', 'public_profile', 'user_location', 'user_friends', 'user_about_me']; // optional
-        $loginUrl = $this->fbHelper->getLoginUrl('http://happycity.xyz/logincallback', $permissions);
+        $loginUrl = $this->fbHelper->getLoginUrl('http://' . $_SERVER['HTTP_HOST'] . '/logincallback', $permissions);
 
         if (isset($_SESSION['facebook_access_token'])) {
             $accessToken = (string) $_SESSION['facebook_access_token'];
@@ -40,6 +40,7 @@ class Application extends CI_Controller {
             $fbData = $response->getDecodedBody();
 
             $friends = $fbData['friends']['data'];
+
             foreach ($friends as &$val) {
                 $val['avatar'] = "http://graph.facebook.com/" . $val['id'] . "/picture";
             }

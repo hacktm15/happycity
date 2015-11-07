@@ -15,6 +15,10 @@ $config['questions'] = [
 $config['influx_endpoint'] = 'http://happycity.xyz:8086/write?db=test';
 $config['influx_metric'] = 'metric_name';
 
+$config['fb_app_id'] = '559352467574102';
+$config['fb_secret'] = '89b78e834e4d0a8707748c44cd1d1150';
+$config['fb_api_v']  = 'v2.5';
+
 /*
 |--------------------------------------------------------------------------
 | Base Site URL

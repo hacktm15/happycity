@@ -9,9 +9,9 @@ class Logincallback extends CI_Controller {
         $this->load->helper('url');
 
         $fb = new Facebook\Facebook([
-            'app_id' => '559352467574102',
-            'app_secret' => '89b78e834e4d0a8707748c44cd1d1150',
-            'default_graph_version' => 'v2.5',
+            'app_id' => $this->config->item('fb_app_id'),
+            'app_secret' => $this->config->item('fb_secret'),
+            'default_graph_version' => $this->config->item('default_graph_version'),
         ]);
 
         $helper = $fb->getRedirectLoginHelper();
