@@ -12,19 +12,19 @@
         <div class="col-md-6">
           <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-primary">
-              <input name="question[<?=$id; ?>][1]" type="checkbox" autocomplete="off"> 1
+              <input name="question[<?=$id; ?>]" value="1" type="radio" autocomplete="off"> 1
             </label>
             <label class="btn btn-primary">
-              <input name="question[<?=$id; ?>][2]" type="checkbox" autocomplete="off"> 2
+              <input name="question[<?=$id; ?>]" value="2" type="radio" autocomplete="off"> 2
             </label>
             <label class="btn btn-primary">
-              <input name="question[<?=$id; ?>][3]" type="checkbox" autocomplete="off"> 3
+              <input name="question[<?=$id; ?>]" value="3" type="radio" autocomplete="off"> 3
             </label>
             <label class="btn btn-primary">
-              <input name="question[<?=$id; ?>][4]" type="checkbox" autocomplete="off"> 4
+              <input name="question[<?=$id; ?>]" value="4" type="radio" autocomplete="off"> 4
             </label>
             <label class="btn btn-primary">
-              <input name="question[<?=$id; ?>][5]" type="checkbox" autocomplete="off"> 5
+              <input name="question[<?=$id; ?>]" value="5" type="radio" autocomplete="off"> 5
             </label>
           </div>
         </div>

@@ -15,6 +15,7 @@ class Survey extends Application {
     public function submit()
     {
         print_r($_POST);
+        print_r($this->sharedData);
     }
 
     public function thankyou()
