@@ -1,4 +1,4 @@
-<?php include('includes/header.php'); ?>
+<?php $this->view('includes/header'); ?>
     
 <div class="jumbotron">
         <div class="container">
