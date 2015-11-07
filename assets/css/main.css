@@ -102,6 +102,7 @@ h2 {
     border: 0;
 }
 
+.btn-primary:focus,
 .btn-primary:active,
 .btn-primary:hover {
     background-color: #ec4d2c;
