@@ -35,5 +35,10 @@ class Welcome extends Application {
         $this->load->view('main', $data + $this->sharedData);
     }
 
+    public function privacy()
+    {
+        $this->load->view('privacy');
+    }
+
 
 }
