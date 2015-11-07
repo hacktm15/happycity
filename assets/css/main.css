@@ -25,10 +25,16 @@ ul{
 
 li {
 	display: inline-block;
-        margin: 0 5px;
+    margin: 0 5px;
 }
 
 .welcome {
-        padding: 15px 15px;
-        margin: 0;
+    padding: 10px;
+    margin: 0;
+}
+
+.welcome img {
+	width: 30px;
+	margin-right: 3px;
+	border-radius: 3px;
 }

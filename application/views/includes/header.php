@@ -26,12 +26,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Happy City</a>
+          <a class="navbar-brand" href="/">Happy City</a>
         </div>
         <div class="navbar-right">
 		<p class="welcome">
 			<?php if (@$userData['first_name']) { ?>
-                Bine ai venit <?= $userData['first_name'] ?> <img src="<?= $userData['picture']['data']['url'] ?>">
+                <img src="<?= $userData['picture']['data']['url'] ?>"> <?= $userData['first_name'] ?>, bine ai venit!
             <?php } else { ?>
                 <a href="<?= $loginUrl ?>">Login cu Facebook</a>
             <?php } ?>          
