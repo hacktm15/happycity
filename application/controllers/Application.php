@@ -30,4 +30,20 @@ class Application extends CI_Controller {
         $this->sharedData['loginUrl'] = $loginUrl;
         $this->sharedData['userData'] = $this->session->userdata();
     }
+
+    public function getFbFriends()
+    {
+        $friends = array();
+        $facebook_access_token = $this->session->userdata('facebook_access_token');
+        if ($facebook_access_token) {
+            $response = $this->fb->get('/me?fields=friends');
+            $fbData = $response->getDecodedBody();
+
+            $friends = $fbData['friends']['data'];
+            foreach ($friends as &$val) {
+                $val['avatar'] = "http://graph.facebook.com/" . $val['id'] . "/picture";
+            }
+        }
+        return $friends;        
+    }
 }
