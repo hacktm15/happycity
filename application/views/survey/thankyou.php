@@ -11,7 +11,7 @@
                 <img src="<?= $userData['picture']['data']['url'] ?>"> <?= $userData['first_name'] ?>, îți mulțumim frumos!
                 <?php } ?>
                 </h2>
-                <div class="fb-share-button" data-href="https://<?= $_SERVER['HTTP_HOST']?>/index.php/survey/" data-layout="button_count"></div>
+                <div class="fb-share-button" data-href="http://<?= $_SERVER['HTTP_HOST']?>/survey/" data-layout="button_count"></div>
             </div>
 
         </div>

@@ -7,7 +7,7 @@
 		<div class="row">
 
             <div class="col-md-4">
-                <!-- <img src="/assets/img/logo.png" alt="Happy City" style="max-width: 100%"> -->
+                <p class="indice">79</p>
             </div>
 
             <div class="col-md-8">
