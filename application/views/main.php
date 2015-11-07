@@ -12,8 +12,8 @@
             </div>
 
             <div class="col-md-8">
-                <h1>Gross City Happiness</h1>
-                <p>GCH este indicele fericirii. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt neque nunc, sed dapibus odio ullamcorper pulvinar.</p>
+                <h1>City Happiness Index</h1>
+                <p>CHI este indicele fericirii. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt neque nunc, sed dapibus odio ullamcorper pulvinar.</p>
                 <?php $this->view('includes/friends'); ?>
 
                 <p>
