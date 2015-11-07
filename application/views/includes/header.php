@@ -30,15 +30,9 @@
         </div>
         <div class="navbar-right">
 			<?php if (@$userData['first_name']) { ?>
-                Salut <?= $userData['first_name'] ?> <img src="<?= $userData['picture']['data']['url'] ?>">, <?= $userData['location']['name'] ?>
-                <br>
-                Prieteni care au completat deja surveyul
-                <?php foreach ($friends as $val) { ?>
-                  <?= $val['name'] ?> <img src="<?= $val['avatar'] ?>">, 
-                <?php } ?>
-
+                Bine ai venit <?= $userData['first_name'] ?> <img src="<?= $userData['picture']['data']['url'] ?>">
             <?php } else { ?>
-                <a href="<?= $loginUrl ?>">Login with Facebook</a>
+                <a href="<?= $loginUrl ?>">Login cu Facebook</a>
             <?php } ?>          
         </div>
       </div>
