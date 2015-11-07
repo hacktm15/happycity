@@ -20,6 +20,13 @@ class Application extends CI_Controller {
         $permissions = ['email', 'public_profile', 'user_location', 'user_friends', 'user_about_me']; // optional
         $loginUrl = $this->fbHelper->getLoginUrl('http://happycity.xyz/index.php/logincallback', $permissions);
 
+        if (isset($_SESSION['facebook_access_token'])) {
+            $accessToken = (string) $_SESSION['facebook_access_token'];
+            // Sets the default fallback access token so we don't have to pass it to each request
+            $this->fb->setDefaultAccessToken($accessToken);
+        }
+
+
         $this->sharedData['loginUrl'] = $loginUrl;
         $this->sharedData['userData'] = $this->session->userdata();
     }

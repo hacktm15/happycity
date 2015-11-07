@@ -9,7 +9,10 @@ class Welcome extends Application {
     {
         $data['current'] = 'login';
 
-        var_dump($this->sharedData);
+        $response = $thi->fb->get('/me?fields=friends');
+        $fbData = $response->getDecodedBody();
+
+        var_dump($fbData);
 
         $this->load->view('main', $data + $this->sharedData);
     }
