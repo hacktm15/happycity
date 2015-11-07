@@ -12,7 +12,7 @@ class Welcome extends Application {
         $response = $this->fb->get('/me?fields=friends');
         $fbData = $response->getDecodedBody();
 
-        var_dump($fbData);
+        var_dump($_SESSION, $fbData);
 
         $this->load->view('main', $data + $this->sharedData);
     }
