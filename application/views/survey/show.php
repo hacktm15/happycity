@@ -5,40 +5,42 @@
 
         <div class="row">        
 
-            <p>Pe o scară de la 1 la 5, cu 1 fiind 'Dezacord Total' și 5 fiind 'Acord Total', te rugăm să răspunzi la următoarele întrebări:</p>
             <?php $this->view('includes/friends'); ?>
 
             <form action="/survey/submit" method="post">
             <?php foreach ($questions as $id => $text): ?>
-                <div class="row">
+                <div class="row row-form">
                     <div class="col-xs-12">
                         <h2><?=$id; ?>. <?=$text; ?></h2>
                     </div>
                     <div class="col-xs-12">
                         <div class="btn-group" data-toggle="buttons">
                           <label class="btn btn-default">
-                            <input name="questions[<?=$id; ?>]" value="1" type="radio" autocomplete="off"> 1
+                            <input name="questions[<?=$id; ?>]" value="1" type="radio" autocomplete="off">În niciun caz!
                           </label>
                           <label class="btn btn-default">
-                            <input name="questions[<?=$id; ?>]" value="2" type="radio" autocomplete="off"> 2
+                            <input name="questions[<?=$id; ?>]" value="2" type="radio" autocomplete="off">Nu
                           </label>
                           <label class="btn btn-default">
-                            <input name="questions[<?=$id; ?>]" value="3" type="radio" autocomplete="off"> 3
+                            <input name="questions[<?=$id; ?>]" value="3" type="radio" autocomplete="off">Poate
                           </label>
                           <label class="btn btn-default">
-                            <input name="questions[<?=$id; ?>]" value="4" type="radio" autocomplete="off"> 4
+                            <input name="questions[<?=$id; ?>]" value="4" type="radio" autocomplete="off">Da
                           </label>
                           <label class="btn btn-default">
-                            <input name="questions[<?=$id; ?>]" value="5" type="radio" autocomplete="off"> 5
+                            <input name="questions[<?=$id; ?>]" value="5" type="radio" autocomplete="off">Cu siguranţă!
                           </label>
                         </div>
                     </div>
                 </div>
             <?php endforeach; ?>
-
-            <p class="text-center">
-              <button type="submit" class="btn btn-primary btn-lg">Trimite răspunsurile</button>
-            </p>
+            <div class="row row-form-btn">
+              <div class="col-xs-12">
+                <p>
+                  <button type="submit" class="btn btn-primary btn-lg">Trimite răspunsurile</button>
+                </p>
+              </div>
+            </div>
 
           </form>
 

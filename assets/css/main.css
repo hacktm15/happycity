@@ -64,7 +64,7 @@ footer {
     margin: 0;
 }
 
-.welcome i{
+.welcome i {
     font-size: 1.5em;
     margin-right: 5px;
 }
@@ -137,4 +137,16 @@ p.indice {
 
 .city-label h2 {
     color: #ef5333;
+}
+
+.btn-group label {
+    width: 10em;
+}
+
+.row-form {
+    margin-bottom: 10px;
+}
+
+.row-form-btn {
+    margin-top: 30px;
 }
