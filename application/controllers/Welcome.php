@@ -13,7 +13,7 @@ class Welcome extends CI_Controller {
         ]);
 
         $helper = $fb->getRedirectLoginHelper();
-        $permissions = ['email', 'public_profile', 'user_location']; // optional
+        $permissions = ['email', 'public_profile', 'user_location', 'user_friends', 'user_about_me']; // optional
         $loginUrl = $helper->getLoginUrl('http://happycity.xyz/index.php/logincallback', $permissions);
 
         $data['loginUrl'] = $loginUrl;
