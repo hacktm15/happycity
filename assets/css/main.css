@@ -26,6 +26,11 @@ body {
     color: red;
 }
 
+.friends p {
+        font-size: 14px;
+        margin-bottom: 2px;
+}
+
 .friends ul {
 	list-style-type: none;
 	padding: 0;
@@ -54,12 +59,12 @@ body {
 }
 
 .navbar-brand {
-        height: auto;
-        padding: 5px;
+    height: auto;
+    padding: 5px;
 }
 
 .navbar-brand img {
-        width: 200px;
+    width: 200px;
 }
 
 /*.jumbotron {
@@ -67,9 +72,18 @@ body {
 }
 */
 .jumbotron h1 {
-        color: #ef5333;
+    color: #ef5333;
 }
 
 h2 {
-        color: #009eb4;
+    color: #009eb4;
+}
+
+.btn-primary {
+    background-color: #ef5333;
+    border: 0;
+}
+
+.btn-primary:hover {
+    background-color: #ec4d2c;
 }
