@@ -1,9 +1,16 @@
 body {
-    padding-top: 50px;
+
+}
+
+.navbar {
+        height: auto;
+        min-height: auto;
+        margin-bottom: 0;
 }
 
 .navbar-default {
 	background-color: #ffffff;
+        border: 0;
 }
 
 .trend-positive,
@@ -44,4 +51,25 @@ body {
 .friends img {
 	width: 50px;
 	margin-right: 3px;
+}
+
+.navbar-brand {
+        height: auto;
+        padding: 5px;
+}
+
+.navbar-brand img {
+        width: 200px;
+}
+
+/*.jumbotron {
+        background: #daf3fa;
+}
+*/
+.jumbotron h1 {
+        color: #ef5333;
+}
+
+h2 {
+        color: #009eb4;
 }

@@ -2,26 +2,37 @@
     
 <div class="jumbotron">
     <div class="container">
-		<h1>Gross City Happiness (GCH)</h1>
-		<p>GCH este indicele fericirii :)</p>
-		<?php if (!empty($friends)) { ?>
-		<div class="friends">
-			<h3>Prietenii tai au completat deja sondajul!</h3>
-			<ul>
-		    <?php foreach ($friends as $val) { ?>
-		      <li><img src="<?= $val['avatar'] ?>" title="<?= $val['name'] ?>" alt="<?= $val['name'] ?>" data-toggle="tooltip" data-placement="top" ></li>
-		    <?php } ?>
-		    </ul>
-	    </div>
-	    <?php } ?>
+
+		<div class="row">
+
+                        <div class="col-md-4">
+                                <!-- <img src="/assets/img/logo.png" alt="Happy City" style="max-width: 100%"> -->
+                        </div>
+
+                        <div class="col-md-8">
+                                <h1>Gross City Happiness</h1>
+                                <p>GCH este indicele fericirii :)</p>
+                                <?php if (!empty($friends)) { ?>
+                                <div class="friends">
+                                        <h3>Prietenii tai au completat deja sondajul!</h3>
+                                        <ul>
+                                    <?php foreach ($friends as $val) { ?>
+                                      <li><img src="<?= $val['avatar'] ?>" title="<?= $val['name'] ?>" alt="<?= $val['name'] ?>" data-toggle="tooltip" data-placement="top" ></li>
+                                    <?php } ?>
+                                    </ul>
+                            </div>
+                            <?php } ?>
+
+                                <p>
+                                <?php if (@$userData['first_name']) { ?>
+                                        <a class="btn btn-primary btn-lg" href="/survey" role="button">Completează sondajul &raquo;</a>
+                            <?php } else { ?>
+                                <a class="btn btn-primary btn-lg" href="<?= $loginUrl ?>" role="button">Login cu Facebook &raquo;</a>
+                            <?php } ?>
+                            </p>
+                        </div>
+                </div>
 		
-		<p>
-		<?php if (@$userData['first_name']) { ?>
-			<a class="btn btn-primary btn-lg" href="/survey" role="button">Completează sondajul &raquo;</a>        
-	    <?php } else { ?>        
-	        <a class="btn btn-primary btn-lg" href="<?= $loginUrl ?>" role="button">Login cu Facebook &raquo;</a>        
-	    <?php } ?>          
-	    </p>
 	</div>
 </div>
 
