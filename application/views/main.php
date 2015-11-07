@@ -6,13 +6,13 @@
 
 		<div class="row">
 
-            <div class="col-md-4">
+            <div class="col-md-4 text-center">
                 <p class="indice">79</p>
             </div>
 
             <div class="col-md-8">
                 <h1>Gross City Happiness</h1>
-                <p>GCH este indicele fericirii :)</p>
+                <p>GCH este indicele fericirii. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt neque nunc, sed dapibus odio ullamcorper pulvinar.</p>
                 <?php $this->view('includes/friends'); ?>
 
                 <p>

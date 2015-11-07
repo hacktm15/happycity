@@ -6,6 +6,10 @@ footer {
     padding: 0 10px;
 }
 
+.container {
+    position: relative;
+}
+
 .navbar {
         height: auto;
         min-height: auto;
@@ -46,7 +50,9 @@ footer {
 }
 
 .welcome {
-    padding-top: 100px;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
     margin: 0;
 }
 
@@ -66,7 +72,7 @@ footer {
 }
 
 .welcome-logged{
-    padding-top: 80px;
+    bottom: 10px;
     font-size: 1.5em;
 }
 
@@ -114,6 +120,5 @@ p.indice {
     margin: 0;
     padding: 0;
     color: #009eb4;
-    text-align: right;
     margin-right: 10px;
 }
