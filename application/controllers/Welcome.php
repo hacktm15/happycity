@@ -31,10 +31,8 @@ class Welcome extends CI_Controller {
         $permissions = ['email', 'public_profile']; // optional
         $loginUrl = $helper->getLoginUrl('http://happycity.xyz/index.php/logincallback', $permissions);
 
-
         $data['loginUrl'] = $loginUrl;
         $data['current'] = 'login';
-var_dump($_SESSION);
 
         $this->load->view('main', $data);
     }
