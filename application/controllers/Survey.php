@@ -7,8 +7,9 @@ class Survey extends Application {
     public function index()
     {
         $data = array();
+        $data = ['questions' => $this->config->item('questions')];
 
-        $this->load->view('survey/submit', $data + $this->sharedData);
+        $this->load->view('survey/show', $data + $this->sharedData);
     }
 
     public function submit()

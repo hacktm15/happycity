@@ -2,6 +2,17 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 /*
+ * Questions array. Varies from 1 => 'totally disagree' to 5 => 'totally agree'
+ */
+$config['questions'] = [
+    1 => 'Orasul este administrat intr-un mod corespunzator.',
+    2 => 'Infrastructura rutiera este functionala.',
+    3 => 'Imi face placere sa ma plimb prin oras.',
+    4 => 'Scolile sunt potrivite pentru educatia copiiilor mei.',
+    5 => 'Din punct de vedere tehnologic, orasul este genial.'
+];
+
+/*
 |--------------------------------------------------------------------------
 | Base Site URL
 |--------------------------------------------------------------------------
