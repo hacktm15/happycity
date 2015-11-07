@@ -1,4 +1,4 @@
-<?php include(dirname(__FILE__) . '/../includes/header.php'); ?>
+<?php $this->view('includes/header'); ?>
 
     <p>Pe o scara de la 1 la 5, cu 1 fiind 'Dezacord Total' si 5 fiind 'Acord Total', raspunde la urmatoarele
     intrebari:</p>
@@ -37,4 +37,4 @@
 
   </form>
 
-<?php include(dirname(__FILE__) . '/../includes/footer.php'); ?>
+<?php $this->view('includes/footer'); ?>

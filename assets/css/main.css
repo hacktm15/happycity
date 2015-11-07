@@ -1,5 +1,9 @@
 body {
+    padding-bottom: 20px;
+}
 
+footer {
+    padding: 0 10px;
 }
 
 .navbar {
