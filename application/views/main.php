@@ -1,11 +1,9 @@
 <?php include('includes/header.php'); ?>
-
+    
     <div class="jumbotron">
       <div class="container">
-        <div class="embed-responsive embed-responsive-4by3">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/0yMZ-04ud_Q" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <p>   </p>
+        <h1>Hello, world!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>             
         <p>It only takes one minute to complete the survey.</p>
         <p><a class="btn btn-primary btn-lg" href="survey.html" role="button">Take the survey! &raquo;</a></p>
       </div>
