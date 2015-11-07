@@ -1,11 +1,24 @@
 <?php $this->view('includes/header'); ?>
-<?php $this->view('includes/navigation'); ?>
 
-    <div class="container">
+    <div class="container container-survey">
 
-        <div class="row">        
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="/"><img src="/assets/img/logo.png" alt="Happy City" class="img-responsive center-block" width="300"></a>
+            </div>
+        </div>
+        
+        <div class="row ">        
 
-            <?php $this->view('includes/friends'); ?>
+            <div class="col-xs-12 text-center">
+                <?php if (@$userData['first_name']) { ?>            
+                <img class="profil" src="<?= $userData['picture']['data']['url'] ?>"><br><h3>Salut <?= $userData['first_name'] ?>!</h3>
+                <?php } ?>                
+            </div>
+
+            <div class="col-xs-12 text-center">                
+                <?php $this->view('includes/friends'); ?>
+            </div>
 
             <form action="/survey/submit" method="post">
             <?php foreach ($questions as $id => $text): ?>
@@ -35,7 +48,7 @@
                 </div>
             <?php endforeach; ?>
             <div class="row row-form-btn">
-              <div class="col-xs-12">
+              <div class="col-xs-12 text-center">
                 <p>
                   <button type="submit" class="btn btn-primary btn-lg">Trimite răspunsurile</button>
                 </p>
