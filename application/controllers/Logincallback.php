@@ -48,12 +48,20 @@ class Logincallback extends CI_Controller {
             }
 
 
+            $request = new Facebook\FacebookRequest(
+              $accessToken,
+              'GET',
+              '/' . $userNode->getId()
+            );
+            $response = $request->execute();
+            $graphObject = $response->getGraphObject();
+
             
             
 
             echo 'Logged in as ' . $userNode->getName();
 
-var_dump($response);
+            var_dump($graphObject);
 
             // Now you can redirect to another page and use the
             // access token from $_SESSION['facebook_access_token']
