@@ -6,7 +6,6 @@ class Logincallback extends CI_Controller {
 
     public function index()
     {
-
         $fb = new Facebook\Facebook([
             'app_id' => '559352467574102',
             'app_secret' => '89b78e834e4d0a8707748c44cd1d1150',
@@ -35,8 +34,8 @@ class Logincallback extends CI_Controller {
             $fb->setDefaultAccessToken($accessToken);
 
             try {
-                $response = $fb->get('/me?fields=email,first_name,last_name');
-                $userNode = $response->getGraphUser();
+                $response = $fb->get('/me?fields=id,email,first_name,last_name');
+                // $userNode = $response->getGraphUser();
             } catch(Facebook\Exceptions\FacebookResponseException $e) {
                 // When Graph returns an error
                 echo 'Graph returned an error: ' . $e->getMessage();
@@ -47,12 +46,12 @@ class Logincallback extends CI_Controller {
                 exit;
             }
 
+            $fbData = $response->getDecodedBody();
+
+            $this->session->set_userdata($fbData);
+
             
-
-            echo 'Logged in as ' . $userNode->getName();
-
-            var_dump($userNode);
-
+            
             // Now you can redirect to another page and use the
             // access token from $_SESSION['facebook_access_token']
         }

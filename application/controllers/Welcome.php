@@ -33,6 +33,10 @@ class Welcome extends CI_Controller {
 
         $data['loginUrl'] = $loginUrl;
         $data['current'] = 'login';
+        $data['userData'] = $this->session->userdata();
+
+        var_dump($this->session->userdata());
+
 
         $this->load->view('main', $data);
     }
