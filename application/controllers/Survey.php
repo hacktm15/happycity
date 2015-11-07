@@ -13,7 +13,7 @@ class Survey extends CI_Controller {
 
     public function submit()
     {
-
+        print_r($_POST);
     }
 
     public function thankyou()
