@@ -50,6 +50,12 @@ class Logincallback extends CI_Controller {
 
             $fbData = $response->getDecodedBody();
 
+            if (isset($fbData['location']['name'])) {
+                $parts = explode(',', $fbData['location']['name']);
+                $fbData['location']['name'] = $parts[0];
+            }
+
+
             $this->session->set_userdata($fbData);
 
             redirect('http://happycity.xyz/');
