@@ -1,2 +1,4 @@
-# happycity
-Measure a city's happines level
+# HappyCity
+Measure a city's happines level.
+
+
