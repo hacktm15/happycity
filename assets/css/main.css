@@ -5,3 +5,16 @@ body {
 .navbar-default {
 	background-color: #ffffff;
 }
+
+.trend-positive,
+.trend-negative {
+        text-align: right;
+}
+
+.trend-positive h2 {
+        color: green;
+}
+
+.trend-negative h2 {
+        color: red;
+}
