@@ -47,11 +47,13 @@ class Logincallback extends CI_Controller {
                 exit;
             }
 
+
+            
             
 
             echo 'Logged in as ' . $userNode->getName();
 
-var_dump($userNode);
+var_dump($response);
 
             // Now you can redirect to another page and use the
             // access token from $_SESSION['facebook_access_token']
