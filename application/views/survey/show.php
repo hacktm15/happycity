@@ -1,4 +1,5 @@
 <?php $this->view('includes/header'); ?>
+<div class="fb-share-button" data-href="https://<?= $_SERVER['HTTP_HOST']?>/index.php/survey/" data-layout="button_count"></div>
 
     <p>Pe o scara de la 1 la 5, cu 1 fiind 'Dezacord Total' si 5 fiind 'Acord Total', raspunde la urmatoarele
     intrebari:</p>

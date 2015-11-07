@@ -46,15 +46,20 @@ footer {
 }
 
 .welcome {
-    padding: 10px;
+    padding-top: 100px;
     margin: 0;
 }
-
-.friends img,
+.welcome i{
+    font-size: 1.5em;
+    margin-right: 5px;
+}
+.welcome a{
+	text-decoration: none;
+}
 .welcome img {
-	width: 30px;
-	margin-right: 3px;
-	border-radius: 3px;
+    border-radius: 6px;
+	width: 50px;
+	margin-right: 5px;
 }
 
 .friends img {
@@ -88,6 +93,7 @@ h2 {
     border: 0;
 }
 
+.btn-primary:active,
 .btn-primary:hover {
     background-color: #ec4d2c;
 }
