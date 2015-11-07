@@ -57,6 +57,8 @@
 
           </form>
 
+
+<?php $this->view('includes/credits'); ?>
         </div>
 
     </div>

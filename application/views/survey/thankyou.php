@@ -14,9 +14,12 @@
                 <?php } ?>
                 </h2>
                 <div class="fb-share-button" data-href="http://<?= $_SERVER['HTTP_HOST']?>/survey/" data-layout="button_count"></div>
+                <br><br><br><br><br><br>
             </div>
 
         </div>
+
+        <?php $this->view('includes/credits'); ?>
 
     </div>
 
