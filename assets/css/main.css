@@ -57,9 +57,9 @@ footer {
 	text-decoration: none;
 }
 .welcome img {
+    border-radius: 6px;
 	width: 50px;
 	margin-right: 5px;
-	border-radius: 3px;
 }
 
 .friends img {
