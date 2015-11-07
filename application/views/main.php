@@ -7,7 +7,7 @@
 		<div class="row">
 
             <div class="col-md-4 text-center">
-                <p class="indice">79</p>
+                <p class="indice"><?=$cities['national']; ?></p>
             </div>
 
             <div class="col-md-8">
