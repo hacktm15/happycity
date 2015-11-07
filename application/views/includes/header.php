@@ -32,7 +32,7 @@
 			<?php if (@$userData['first_name']) { ?>
                 Salut <?= $userData['first_name'] ?>, <?= $userData['location']['name'] ?>
             <?php } else { ?>
-                <a href="#">Login with Facebook</a>
+                <a href="<?= $loginUrl ?>">Login with Facebook</a>
             <?php } ?>          
         </div>
       </div>
