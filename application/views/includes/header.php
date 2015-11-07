@@ -30,7 +30,7 @@
         </div>
         <div class="navbar-right">
 			<?php if (@$userData['first_name']) { ?>
-                Salut <?= $userData['first_name'] ?> <img src="<?= $userData['picture']['url'] ?>">, <?= $userData['location']['name'] ?>
+                Salut <?= $userData['first_name'] ?> <img src="<?= $userData['picture']['data']['url'] ?>">, <?= $userData['location']['name'] ?>
             <?php } else { ?>
                 <a href="<?= $loginUrl ?>">Login with Facebook</a>
             <?php } ?>          
