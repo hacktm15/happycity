@@ -36,7 +36,7 @@ class Logincallback extends CI_Controller {
             $fb->setDefaultAccessToken($accessToken);
 
             try {
-                $response = $fb->get('/me?fields=id,email,first_name,last_name,location');
+                $response = $fb->get('/me?fields=id,email,first_name,last_name,location,picture,friends');
                 // $userNode = $response->getGraphUser();
             } catch(Facebook\Exceptions\FacebookResponseException $e) {
                 // When Graph returns an error
