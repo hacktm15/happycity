@@ -36,7 +36,7 @@ class Logincallback extends CI_Controller {
             $fb->setDefaultAccessToken($accessToken);
 
             try {
-                $response = $fb->get('/me?fields=id,email,first_name,last_name,location,picture,friends');
+                $response = $fb->get('/me?fields=id,email,first_name,last_name,location,picture');
                 // $userNode = $response->getGraphUser();
             } catch(Facebook\Exceptions\FacebookResponseException $e) {
                 // When Graph returns an error
@@ -48,19 +48,22 @@ class Logincallback extends CI_Controller {
                 exit;
             }
 
-            $fbData = $response->getDecodedBody();
+            $this->saveFbData($response);
+        }
+        redirect('http://happycity.xyz/');
+        return;
+    }
 
-            if (isset($fbData['location']['name'])) {
-                $parts = explode(',', $fbData['location']['name']);
-                $fbData['location']['name'] = $parts[0];
-            }
+    public function saveFbData($response)
+    {
+        $fbData = $response->getDecodedBody();
 
-
-            $this->session->set_userdata($fbData);
-
-            redirect('http://happycity.xyz/');
-            return;
+        if (isset($fbData['location']['name'])) {
+            $parts = explode(',', $fbData['location']['name']);
+            $fbData['location']['name'] = $parts[0];
         }
 
+        $this->session->set_userdata($fbData);
     }
+
 }
