@@ -34,7 +34,7 @@ class Logincallback extends CI_Controller {
             $fb->setDefaultAccessToken($accessToken);
 
             try {
-                $response = $fb->get('/me?fields=id,email,first_name,last_name');
+                $response = $fb->get('/me?fields=id,email,first_name,last_name,location');
                 // $userNode = $response->getGraphUser();
             } catch(Facebook\Exceptions\FacebookResponseException $e) {
                 // When Graph returns an error
@@ -50,10 +50,8 @@ class Logincallback extends CI_Controller {
 
             $this->session->set_userdata($fbData);
 
-            
-            
-            // Now you can redirect to another page and use the
-            // access token from $_SESSION['facebook_access_token']
+            redirect('');
+            return;
         }
 
     }
