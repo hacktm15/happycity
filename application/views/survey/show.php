@@ -1,8 +1,6 @@
 <?php $this->view('includes/header'); ?>
+
     <div class="container container-survey">
-<?php $this->view('includes/navigation'); ?>
-    <div class="container">
->>>>>>> new div
 
         <div class="row">
             <div class="col-xs-12">
@@ -62,5 +60,7 @@
 
 <?php $this->view('includes/credits'); ?>
         </div>
+
     </div>
+
 <?php $this->view('includes/footer'); ?>
