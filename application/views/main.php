@@ -72,7 +72,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<div id="body">
 		<?php if (@$userData['first_name']) { ?>
-			Salut <?= $userData['first_name'] ?>
+			Salut <?= $userData['first_name'] ?>, <?= $userData['location']['name'] ?>
 		<?php } else { ?>
 			<a href="<?= $loginUrl ?>">Login with Facebook</a>
 		<?php } ?>		

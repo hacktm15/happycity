@@ -6,6 +6,8 @@ class Logincallback extends CI_Controller {
 
     public function index()
     {
+        $this->load->helper('url');
+
         $fb = new Facebook\Facebook([
             'app_id' => '559352467574102',
             'app_secret' => '89b78e834e4d0a8707748c44cd1d1150',
