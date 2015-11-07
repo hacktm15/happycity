@@ -34,8 +34,8 @@
 
 		<div class="col-md-6">
 			<div class="row">
-				<div class="col-md-6"><h2>Timisoara</h2></div>
-				<div class="col-md-6 trend-positive"><h2>+10%</h2></div>
+                                <div class="col-md-6 city-label"><h2>Timișoara</h2></div>
+                                <div class="col-md-6 city-indice"><h2><?= $cities['Timisoara'] ?></h2></div>
 			</div>
 			<div class="embed-responsive embed-responsive-4by3">
 	            <iframe src="http://happycity.xyz:3000/dashboard-solo/db/curiosity?panelId=1&fullscreen&from=now-15m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
@@ -44,8 +44,8 @@
 
 		<div class="col-md-6">
 			<div class="row">
-				<div class="col-md-6"><h2>Brasov</h2></div>
-				<div class="col-md-6 trend-negative"><h2>-5,23%</h2></div>
+                                <div class="col-md-6 city-label"><h2>Brașov</h2></div>
+                                <div class="col-md-6 city-indice"><h2><?= $cities['Brasov'] ?></h2></div>
 			</div>
 			<div class="embed-responsive embed-responsive-4by3">
 	            <iframe src="http://happycity.xyz:3000/dashboard-solo/db/curiosity?panelId=1&fullscreen&from=now-15m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
@@ -56,10 +56,34 @@
 
     <div class="row">
 
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-6 city-label"><h2>București</h2></div>
+                <div class="col-md-6 city-indice"><h2><?= $cities['Bucuresti'] ?></h2></div>
+            </div>
+            <div class="embed-responsive embed-responsive-4by3">
+                <iframe src="http://happycity.xyz:3000/dashboard-solo/db/curiosity?panelId=1&fullscreen&from=now-15m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-6 city-label"><h2>Cluj-Napoca</h2></div>
+                <div class="col-md-6 city-indice"><h2><?= $cities['Cluj'] ?></h2></div>
+            </div>
+            <div class="embed-responsive embed-responsive-4by3">
+                <iframe src="http://happycity.xyz:3000/dashboard-solo/db/curiosity?panelId=1&fullscreen&from=now-15m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+
 		<div class="col-md-6">
 			<div class="row">
-				<div class="col-md-6"><h2>Constanța</h2></div>
-				<div class="col-md-6 trend-negative"><h2>-7%</h2></div>
+                                <div class="col-md-6 city-label"><h2>Constanța</h2></div>
+                                <div class="col-md-6 city-indice"><h2><?= $cities['Constanta'] ?></h2></div>
 			</div>
 			<div class="embed-responsive embed-responsive-4by3">
 				<iframe src="http://happycity.xyz:3000/dashboard-solo/db/curiosity?panelId=4&fullscreen&from=now-15m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
@@ -68,8 +92,8 @@
 
 		<div class="col-md-6">
 			<div class="row">
-				<div class="col-md-6"><h2>Oradea</h2></div>
-				<div class="col-md-6 trend-positive"><h2>+3%</h2></div>
+                                <div class="col-md-6 city-label"><h2>Oradea</h2></div>
+                                <div class="col-md-6 city-indice"><h2><?= $cities['Oradea'] ?></h2></div>
 			</div>
 			<div class="embed-responsive embed-responsive-4by3">
 				<iframe src="http://happycity.xyz:3000/dashboard-solo/db/curiosity?panelId=5&fullscreen&from=now-15m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>

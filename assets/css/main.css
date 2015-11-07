@@ -21,22 +21,19 @@ footer {
     border: 0;
 }
 
+.city-indice,
 .trend-positive,
 .trend-negative {
     text-align: right;
 }
 
-.trend-positive h2 {
-    color: green;
-}
-
-.trend-negative h2 {
-    color: red;
+.city-indice {
+    color: #;
 }
 
 .friends p {
-        font-size: 14px;
-        margin-bottom: 2px;
+    font-size: 14px;
+    margin-bottom: 2px;
 }
 
 .friends ul {
@@ -123,4 +120,8 @@ p.indice {
     padding: 0;
     color: #009eb4;
     margin-right: 10px;
+}
+
+.city-label h2 {
+    color: #ef5333;
 }
