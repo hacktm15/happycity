@@ -8,13 +8,40 @@ body {
 
 .trend-positive,
 .trend-negative {
-        text-align: right;
+    text-align: right;
 }
 
 .trend-positive h2 {
-        color: green;
+    color: green;
 }
 
 .trend-negative h2 {
-        color: red;
+    color: red;
+}
+
+.friends ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.friends li {
+	display: inline-block;
+    margin: 0;
+}
+
+.welcome {
+    padding: 10px;
+    margin: 0;
+}
+
+.friends img,
+.welcome img {
+	width: 30px;
+	margin-right: 3px;
+	border-radius: 3px;
+}
+
+.friends img {
+	width: 50px;
+	margin-right: 3px;
 }
