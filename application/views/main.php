@@ -46,17 +46,17 @@
 				<div class="col-md-6 trend-positive"><h2>+10%</h2></div>
 			</div>
 			<div class="embed-responsive embed-responsive-4by3">
-	            <iframe src="http://happycity.xyz:3000/dashboard-solo/db/curiosity?panelId=1&fullscreen&from=1446884495001&to=1446906095001&theme=light" width="450" height="200" frameborder="0"></iframe>
+	            <iframe src="http://happycity.xyz:3000/dashboard-solo/db/curiosity?panelId=1&fullscreen&from=now-15m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
 			</div>
 		</div>
 
 		<div class="col-md-6">
 			<div class="row">
-				<div class="col-md-6"><h2>Cluj-Napoca</h2></div>
+				<div class="col-md-6"><h2>Brasov</h2></div>
 				<div class="col-md-6 trend-negative"><h2>-5,23%</h2></div>
 			</div>
 			<div class="embed-responsive embed-responsive-4by3">
-	            <iframe src="http://happycity.xyz:3000/dashboard-solo/db/curiosity?panelId=1&fullscreen&from=1446884495001&to=1446906095001&theme=light" width="450" height="200" frameborder="0"></iframe>
+	            <iframe src="http://happycity.xyz:3000/dashboard-solo/db/curiosity?panelId=1&fullscreen&from=now-15m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
 			</div>
 		</div>
 
@@ -66,21 +66,21 @@
 
 		<div class="col-md-6">
 			<div class="row">
-				<div class="col-md-6"><h2>București</h2></div>
+				<div class="col-md-6"><h2>Constanța</h2></div>
 				<div class="col-md-6 trend-negative"><h2>-7%</h2></div>
 			</div>
 			<div class="embed-responsive embed-responsive-4by3">
-	            <iframe src="http://happycity.xyz:3000/dashboard-solo/db/curiosity?panelId=1&fullscreen&from=1446884495001&to=1446906095001&theme=light" width="450" height="200" frameborder="0"></iframe>
+				<iframe src="http://happycity.xyz:3000/dashboard-solo/db/curiosity?panelId=4&fullscreen&from=now-15m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
 			</div>
 		</div>
 
 		<div class="col-md-6">
 			<div class="row">
-				<div class="col-md-6"><h2>Bacău</h2></div>
+				<div class="col-md-6"><h2>Oradea</h2></div>
 				<div class="col-md-6 trend-positive"><h2>+3%</h2></div>
 			</div>
 			<div class="embed-responsive embed-responsive-4by3">
-	            <iframe src="http://happycity.xyz:3000/dashboard-solo/db/curiosity?panelId=1&fullscreen&from=1446884495001&to=1446906095001&theme=light" width="450" height="200" frameborder="0"></iframe>
+				<iframe src="http://happycity.xyz:3000/dashboard-solo/db/curiosity?panelId=5&fullscreen&from=now-15m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
 			</div>
 		</div>
 
