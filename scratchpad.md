@@ -5,6 +5,19 @@
 
         # create dockers/grafana/Dockerfile
 
+### Grafana
+
     docker build -t dlucian/happycity-grafana .
     docker login
     docker push dlucian/happycity-grafana
+
+Useful: 
+
+ * https://github.com/kamon-io/docker-grafana-influxdb
+ * https://github.com/grafana/grafana-docker/blob/master/Dockerfile
+ 
+To see current docker instance info:
+
+    docker inspect happycity-grafana
+    
+    
