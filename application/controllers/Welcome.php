@@ -13,7 +13,14 @@ class Welcome extends Application {
         if ($facebook_access_token) {
             $response = $this->fb->get('/me?fields=friends');
             $fbData = $response->getDecodedBody();
-            var_dump($fbData);
+
+
+            $friends = $fbData['friends']['data'];
+            foreach ($friends as &$val) {
+                $val['avatar'] = "http://graph.facebook.com/" . $val['id'] . "/picture";
+            }
+            $data['friends'] = $friends;
+            // var_dump($fbData);
         }
 
         $this->load->view('main', $data + $this->sharedData);
