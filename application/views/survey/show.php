@@ -11,8 +11,9 @@
         <div class="row ">        
 
             <div class="col-xs-12 text-center">
+        
                 <?php if (@$userData['first_name']) { ?>            
-                <img class="profil" src="<?= $userData['picture']['data']['url'] ?>"><br><h3>Salut <?= $userData['first_name'] ?>!</h3>
+                <img class="profil" src="<?= $userData['picture']['data']['url'] ?>"><h3>Salut <?= $userData['first_name'] ?>!</h3>
                 <?php } ?>                
             </div>
 
@@ -29,7 +30,7 @@
                     <div class="col-xs-12">
                         <div class="btn-group" data-toggle="buttons">
                           <label class="btn btn-default">
-                            <input name="questions[<?=$id; ?>]" value="1" type="radio" autocomplete="off">În niciun caz!
+                            <input name="questions[<?=$id; ?>]" value="1" type="radio" autocomplete="off">În niciun caz
                           </label>
                           <label class="btn btn-default">
                             <input name="questions[<?=$id; ?>]" value="2" type="radio" autocomplete="off">Nu
@@ -41,7 +42,7 @@
                             <input name="questions[<?=$id; ?>]" value="4" type="radio" autocomplete="off">Da
                           </label>
                           <label class="btn btn-default">
-                            <input name="questions[<?=$id; ?>]" value="5" type="radio" autocomplete="off">Cu siguranţă!
+                            <input name="questions[<?=$id; ?>]" value="5" type="radio" autocomplete="off">Cu siguranţă
                           </label>
                         </div>
                     </div>
