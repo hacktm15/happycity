@@ -3,12 +3,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Survey extends CI_Controller {
 
-    public function submit()
+    public function index()
     {
         $data = array();
         $data['userData'] = $this->session->userdata();
 
-        $this->load->view('survey/submit', $this->fbData + $data);
+        $this->load->view('survey/submit', $data);
+    }
+
+    public function submit()
+    {
+
     }
 
     public function thankyou()

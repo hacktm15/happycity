@@ -20,4 +20,6 @@ To see current docker instance info:
 
     docker inspect happycity-grafana
     
+### InfluxDB
     
+    SELECT * FROM metric_name
