@@ -118,7 +118,7 @@ h2 {
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary:hover {
-    background-color: #ec4d2c;
+    background-color: #E84725 !important;
 }
 
 .col-md-12 img{
