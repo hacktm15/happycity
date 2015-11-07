@@ -25,5 +25,10 @@ ul{
 
 li {
 	display: inline-block;
-	margin: 0 5px;
+        margin: 0 5px;
+}
+
+.welcome {
+        padding: 15px 15px;
+        margin: 0;
 }

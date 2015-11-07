@@ -29,11 +29,13 @@
           <a class="navbar-brand" href="#">Happy City</a>
         </div>
         <div class="navbar-right">
+		<p class="welcome">
 			<?php if (@$userData['first_name']) { ?>
                 Bine ai venit <?= $userData['first_name'] ?> <img src="<?= $userData['picture']['data']['url'] ?>">
             <?php } else { ?>
                 <a href="<?= $loginUrl ?>">Login cu Facebook</a>
             <?php } ?>          
+            </p>
         </div>
       </div>
     </nav>
