@@ -36,7 +36,7 @@
             <?php endforeach; ?>
 
             <p class="text-center">
-              <button type="submit" class="btn btn-primary btn-success btn-lg">Trimite răspunsurile</button>
+              <button type="submit" class="btn btn-primary btn-lg">Trimite răspunsurile</button>
             </p>
 
           </form>
