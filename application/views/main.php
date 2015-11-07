@@ -86,11 +86,8 @@
 
     </div>
 
-    <hr>
-    <footer>
-    <p>&copy; Happy City</p>
-    </footer>
+    <?php $this->view('includes/credits'); ?>
 
 </div> <!-- /container -->
 
-<?php include('includes/footer.php'); ?>
+<?php $this->view('includes/footer'); ?>
