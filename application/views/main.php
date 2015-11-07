@@ -1,18 +1,5 @@
 <?php include('includes/header.php'); ?>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Happy City</a>
-        </div>
-      </div>
-    </nav>
     <div class="jumbotron">
       <div class="container">
         <div class="embed-responsive embed-responsive-4by3">
@@ -67,15 +54,5 @@
         <p>&copy; Happy City</p>
       </footer>
     </div> <!-- /container -->
-
-
-
-		<?php if (@$userData['first_name']) { ?>
-			Salut <?= $userData['first_name'] ?>, <?= $userData['location']['name'] ?>
-		<?php } else { ?>
-			<a href="<?= $loginUrl ?>">Login with Facebook</a>
-		<?php } ?>		
-	
-
 
 <?php include('includes/footer.php'); ?>

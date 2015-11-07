@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Happy City</title>
     <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -15,3 +16,22 @@
   </head>
 
   <body>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Happy City</a>
+        </div>
+      </div>
+    </nav>
+    <?php if (@$userData['first_name']) { ?>
+                        Salut <?= $userData['first_name'] ?>, <?= $userData['location']['name'] ?>
+                <?php } else { ?>
+                        <a href="<?= $loginUrl ?>">Login with Facebook</a>
+                <?php } ?>

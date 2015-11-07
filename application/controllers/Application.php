@@ -2,10 +2,16 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 require_once('Application.php');
 
-class Welcome extends Application {
+class Application extends CI_Controller {
 
-    public function index()
-    {
+    protected $fbData = array();
+
+    public function __construct() {
+        parent::__construct();
+        $this->fbData = $this->getFacebookData();
+    }
+
+    public function getFacebookData() {
         $fb = new Facebook\Facebook([
             'app_id' => '559352467574102',
             'app_secret' => '89b78e834e4d0a8707748c44cd1d1150',
@@ -21,8 +27,11 @@ class Welcome extends Application {
         $data['userData'] = $this->session->userdata();
 
         //var_dump($this->session->userdata());
+        return $data;
+    }
 
-
-        $this->load->view('main', $data);
+    public function index()
+    {
+        $this->load->view('main', $this->fbData);
     }
 }
