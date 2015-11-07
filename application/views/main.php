@@ -1,4 +1,5 @@
 <?php $this->view('includes/header'); ?>
+<?php $this->view('includes/navigation'); ?>
     
 <div class="jumbotron">
     <div class="container">
