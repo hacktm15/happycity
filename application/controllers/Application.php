@@ -18,7 +18,7 @@ class Application extends CI_Controller {
 
         $this->fbHelper = $this->fb->getRedirectLoginHelper();
         $permissions = ['email', 'public_profile', 'user_location', 'user_friends', 'user_about_me']; // optional
-        $loginUrl = $this->fbHelper->getLoginUrl('http://happycity.xyz/index.php/logincallback', $permissions);
+        $loginUrl = $this->fbHelper->getLoginUrl('http://happycity.xyz/logincallback', $permissions);
 
         if (isset($_SESSION['facebook_access_token'])) {
             $accessToken = (string) $_SESSION['facebook_access_token'];

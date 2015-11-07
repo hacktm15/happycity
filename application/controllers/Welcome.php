@@ -24,4 +24,6 @@ class Welcome extends Application {
 
         $this->load->view('main', $data + $this->sharedData);
     }
+
+
 }
