@@ -19,13 +19,14 @@ body {
     color: red;
 }
 
-ul {
+.friends ul {
 	list-style-type: none;
+	padding: 0;
 }
 
-li {
+.friends li {
 	display: inline-block;
-    margin: 0 5px;
+    margin: 0;
 }
 
 .welcome {
@@ -33,8 +34,14 @@ li {
     margin: 0;
 }
 
+.friends img,
 .welcome img {
 	width: 30px;
 	margin-right: 3px;
 	border-radius: 3px;
+}
+
+.friends img {
+	width: 50px;
+	margin-right: 3px;
 }
