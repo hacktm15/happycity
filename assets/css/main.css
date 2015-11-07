@@ -49,17 +49,25 @@ footer {
     padding-top: 100px;
     margin: 0;
 }
+
 .welcome i{
     font-size: 1.5em;
     margin-right: 5px;
 }
+
 .welcome a{
 	text-decoration: none;
 }
+
 .welcome img {
     border-radius: 6px;
 	width: 50px;
 	margin-right: 5px;
+}
+
+.welcome-logged{
+    padding-top: 80px;
+    font-size: 1.5em;
 }
 
 .friends img {
