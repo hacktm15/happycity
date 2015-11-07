@@ -46,14 +46,19 @@ footer {
 }
 
 .welcome {
-    padding: 10px;
+    padding-top: 100px;
     margin: 0;
 }
-
-.friends img,
+.welcome i{
+    font-size: 1.5em;
+    margin-right: 5px;
+}
+.welcome a{
+	text-decoration: none;
+}
 .welcome img {
-	width: 30px;
-	margin-right: 3px;
+	width: 50px;
+	margin-right: 5px;
 	border-radius: 3px;
 }
 

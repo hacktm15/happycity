@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Happy City</title>
     <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="/assets/css/main.css" rel="stylesheet">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -65,7 +65,8 @@
 			<?php if (@$userData['first_name']) { ?>
                 <img src="<?= $userData['picture']['data']['url'] ?>"> <?= $userData['first_name'] ?>, bine ai venit!
             <?php } else { ?>
-                <a href="<?= $loginUrl ?>">Login cu Facebook</a>
+                
+                <a href="<?= $loginUrl ?>"><i class="fa fa-facebook-square"></i><b>Login cu Facebook</b></a>
             <?php } ?>          
             </p>
         </div>
