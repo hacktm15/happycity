@@ -8,6 +8,7 @@
 
             <div class="col-md-4 text-center">
                 <p class="indice"><?=$cities['national']; ?></p>
+                <p class="indice-trend"><span class="trend-positive"><i class="fa fa-arrow-up"></i> 20%</span> față de săptămâna trecută</p>
             </div>
 
             <div class="col-md-8">

@@ -27,6 +27,17 @@ footer {
     text-align: right;
 }
 
+.trend-positive {
+    color: green;
+    font-weight: bold;
+}
+
+.trend-negative {
+    color: red;
+    font-weight: bold;
+}
+
+
 .city-indice {
     color: #;
 }
@@ -111,8 +122,9 @@ h2 {
 }
 
 .col-md-12 img{
-border-radius: 6px;
+    border-radius: 6px;
 }
+
 p.indice {
     font-size: 240px;
     font-weight: 500;
@@ -120,6 +132,7 @@ p.indice {
     padding: 0;
     color: #009eb4;
     margin-right: 10px;
+    line-height: 110%;
 }
 
 .city-label h2 {
