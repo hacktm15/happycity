@@ -113,6 +113,9 @@ h2 {
     background-color: #ec4d2c;
 }
 
+.col-md-12 img{
+border-radius: 6px;
+}
 p.indice {
     font-size: 240px;
     font-weight: 500;

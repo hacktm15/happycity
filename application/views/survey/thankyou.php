@@ -3,9 +3,11 @@
 
     <div class="container">
 
+        <a href="/"><img src="/assets/img/logo.png" alt="Happy City" class="img-responsive center-block"></a>
+
         <div class="row">
 
-            <div class="col-xs-12">
+            <div class="col-md-12 text-center">
                 <h2>
                 <?php if (@$userData['first_name']) { ?>            
                 <img src="<?= $userData['picture']['data']['url'] ?>"> <?= $userData['first_name'] ?>, îți mulțumim frumos!
