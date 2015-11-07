@@ -9,10 +9,11 @@ class Welcome extends Application {
     {
         $data['current'] = 'login';
 
-        var_dump($this->session->userdata());
-        $response = $this->fb->get('/me?fields=friends');
-        $fbData = $response->getDecodedBody();
-
+        if (isset($_SESSION['facebook_access_token'])) {
+            $response = $this->fb->get('/me?fields=friends');
+            $fbData = $response->getDecodedBody();
+            var_dump($fbData);
+        }
 
         $this->load->view('main', $data + $this->sharedData);
     }
