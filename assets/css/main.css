@@ -14,7 +14,7 @@ footer {
 
 .navbar-default {
 	background-color: #ffffff;
-        border: 0;
+    border: 0;
 }
 
 .trend-positive,
@@ -65,6 +65,7 @@ footer {
 .friends img {
 	width: 50px;
 	margin-right: 3px;
+    border-radius: 6px;
 }
 
 .navbar-brand {
