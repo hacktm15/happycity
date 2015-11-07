@@ -8,7 +8,7 @@ class Survey extends CI_Controller {
         $data = array();
         $data['userData'] = $this->session->userdata();
 
-        $this->load->view('survey/submit', $data);
+        $this->load->view('survey/show', $data);
     }
 
     public function submit()
