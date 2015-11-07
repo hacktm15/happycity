@@ -52,7 +52,7 @@ class Logincallback extends CI_Controller {
 
             $this->session->set_userdata($fbData);
 
-            redirect('');
+            redirect('http://happycity.xyz/');
             return;
         }
 
