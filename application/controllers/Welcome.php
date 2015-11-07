@@ -9,7 +9,7 @@ class Welcome extends Application {
     {
         $data['current'] = 'login';
 
-        var_dump($_SESSION);
+        var_dump($this->session->userdata());
         $response = $this->fb->get('/me?fields=friends');
         $fbData = $response->getDecodedBody();
 
