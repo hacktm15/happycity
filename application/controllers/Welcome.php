@@ -20,7 +20,7 @@ class Welcome extends Application {
                 $val['avatar'] = "http://graph.facebook.com/" . $val['id'] . "/picture";
             }
             $data['friends'] = $friends;
-            // var_dump($fbData);
+            var_dump($friends);
         }
 
         $this->load->view('main', $data + $this->sharedData);
