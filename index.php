@@ -282,6 +282,8 @@ switch (ENVIRONMENT)
 
 	define('VIEWPATH', $view_folder);
 
+require_once __DIR__ . '/Facebook/autoload.php';
+
 /*
  * --------------------------------------------------------------------
  * LOAD THE BOOTSTRAP FILE
