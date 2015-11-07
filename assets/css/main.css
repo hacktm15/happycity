@@ -8,13 +8,22 @@ body {
 
 .trend-positive,
 .trend-negative {
-        text-align: right;
+    text-align: right;
 }
 
 .trend-positive h2 {
-        color: green;
+    color: green;
 }
 
 .trend-negative h2 {
-        color: red;
+    color: red;
+}
+
+ul{
+	list-style-type: none;
+}
+
+li {
+	display: inline-block;
+	margin: 0 5px;
 }
