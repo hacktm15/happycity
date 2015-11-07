@@ -1,12 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-require_once('Application.php');
 
-class Survey extends Application {
+class Survey extends CI_Controller {
 
     public function submit()
     {
         $data = array();
+        $data['userData'] = $this->session->userdata();
+
         $this->load->view('survey/submit', $this->fbData + $data);
     }
 

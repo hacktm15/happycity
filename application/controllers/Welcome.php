@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 require_once('Application.php');
 
-class Welcome extends Application {
+class Welcome extends CI_Controller {
 
     public function index()
     {
