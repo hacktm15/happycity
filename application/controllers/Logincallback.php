@@ -50,7 +50,7 @@ class Logincallback extends CI_Controller {
 
             $this->saveFbData($response);
         }
-        redirect('http://' . $_SERVER['HTTP_HOST'] . '/survey');
+        redirect('https://' . $_SERVER['HTTP_HOST'] . '/survey');
         return;
     }
 
@@ -61,6 +61,8 @@ class Logincallback extends CI_Controller {
         if (isset($fbData['location']['name'])) {
             $parts = explode(',', $fbData['location']['name']);
             $fbData['location']['name'] = $parts[0];
+        } else {
+            $fbData['location']['name'] = 'orasul meu';
         }
 
         $this->session->set_userdata($fbData);

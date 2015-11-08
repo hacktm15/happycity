@@ -49,7 +49,7 @@
                 </div>
 			</div>
 			<div class="embed-responsive embed-responsive-4by3">
-	            <iframe src="http://happycity.xyz:3000/dashboard-solo/db/curiosity?panelId=1&fullscreen&from=now-15m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
+	            <iframe src="https://happycity.xyz:3000/dashboard-solo/db/curiosity?panelId=1&fullscreen&from=now-15m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
 			</div>
 		</div>
 
@@ -61,7 +61,7 @@
                 </div>
 			</div>
 			<div class="embed-responsive embed-responsive-4by3">
-	            <iframe src="http://happycity.xyz:3000/dashboard-solo/db/curiosity?panelId=1&fullscreen&from=now-15m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
+	            <iframe src="https://happycity.xyz:3000/dashboard-solo/db/curiosity?panelId=1&fullscreen&from=now-15m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
 			</div>
 		</div>
 

@@ -21,11 +21,11 @@
                 <?php $this->view('includes/friends'); ?>
             </div>
 
-            <form action="https://<?= $_SERVER['HTTP_HOST'] ?>/survey/submit" method="post">
+            <form action="/survey/submit" method="post">
             <?php foreach ($questions as $id => $text): ?>
                 <div class="row row-form">
                     <div class="col-xs-12">
-                        <h2><?=$id; ?>. <?=$text; ?></h2>
+                        <h2><?=$id; ?>. <?= ucfirst(sprintf($text, $userData['location']['name'])); ?></h2>
                     </div>
                     <div class="col-xs-12">
                         <div class="btn-group" data-toggle="buttons">

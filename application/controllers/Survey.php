@@ -6,6 +6,10 @@ class Survey extends Application {
 
     public function index()
     {
+        if (!isset($this->sharedData['userData']['id'])) {
+            redirect('https://' . $_SERVER['HTTP_HOST']);
+            return;
+        }
         $data = array();
         $data = ['questions' => $this->config->item('questions')];
         $data['friends'] = $this->getFbFriends();
@@ -49,7 +53,7 @@ class Survey extends Application {
             $this->Persist_model->data($value, $tags + ['question_id' => $id]);
 
 
-        redirect('http://' . $_SERVER['HTTP_HOST'] . '/survey/thankyou');
+        redirect('https://' . $_SERVER['HTTP_HOST'] . '/survey/thankyou');
     }
 
     public function thankyou()
