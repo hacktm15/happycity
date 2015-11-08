@@ -96,26 +96,34 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
 
     </div>
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Oras</th>
-                <th>Indice</th>
-                <th>Precedent</th>
-                <th>Variatie</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($cities as $cityName => $values): ?>
-                <tr <?=$cityName=='national' ? 'class="info"' : '' ?>>
-                    <td><?=ucfirst($cityName); ?></td>
-                    <td><?=$values['value']; ?></td>
-                    <td><?=$values['previous_value']; ?></td>
-                    <td><?=sprintf('%+0.2f', $values['variation']); ?>%</td>
+    <div class="row">
+        <div class="col-md-12">
+
+            <h2>Distributia indicelui CHI pe orase</h2>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Oras</th>
+                    <th>CHI Curent</th>
+                    <th>CHI Precedent</th>
+                    <th>Variatie (procent)</th>
                 </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
+                </thead>
+                <tbody>
+                <?php foreach ($cities as $cityName => $values): ?>
+                    <tr <?=$cityName=='national' ? 'class="info"' : '' ?>>
+                        <td><?=ucfirst($cityName); ?></td>
+                        <td><?=$values['value']; ?></td>
+                        <td><?=$values['previous_value']; ?></td>
+                        <td><?=sprintf('%+0.2f', $values['variation']); ?>%</td>
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
 
     <?php $this->view('includes/credits'); ?>
 
