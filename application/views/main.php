@@ -44,7 +44,7 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
 
 		<div class="col-md-6">
 			<div class="row">
-                <div class="col-md-6 city-label"><h2>Timișoara</h2></div>
+                <div class="col-md-6 city-label"><h2><a href="/timisoara">Timișoara</a></h2></div>
                 <div class="col-md-6 city-indice">
                     <h2><?= $cities['Timisoara']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'Timisoara']); ?></h2>
                 </div>
@@ -56,7 +56,7 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
 
 		<div class="col-md-6">
 			<div class="row">
-                <div class="col-md-6 city-label"><h2>Brașov</h2></div>
+                <div class="col-md-6 city-label"><h2><a href="/brasov">Brașov</h2></div>
                 <div class="col-md-6 city-indice">
                     <h2><?= $cities['Brasov']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'Brasov']); ?></h2>
                 </div>
@@ -72,7 +72,7 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
 
 		<div class="col-md-6">
 			<div class="row">
-                <div class="col-md-6 city-label"><h2>Constanța</h2></div>
+                <div class="col-md-6 city-label"><h2><a href="/constanta">Constanța</a></h2></div>
                 <div class="col-md-6 city-indice">
                     <h2><?= $cities['Constanta']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'Constanta']); ?></h2>
                 </div>
@@ -84,7 +84,7 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
 
 		<div class="col-md-6">
 			<div class="row">
-                <div class="col-md-6 city-label"><h2>Oradea</h2></div>
+                <div class="col-md-6 city-label"><h2><a href="/oradea">Oradea</a></h2></div>
                 <div class="col-md-6 city-indice">
                     <h2><?= $cities['Oradea']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'Oradea']); ?></h2>
                 </div>

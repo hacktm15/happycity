@@ -7,14 +7,24 @@
 
         <div class="row">
 
-            <div class="col-md-12 text-center">
+            <div class="col-xs-12 text-center">
 
-                <h1>CHI Timișoara</h1>
-                <iframe src="http://happycity.xyz:3000/dashboard-solo/db/hacktm?panelId=2&fullscreen&from=now-6m&to=now&theme=light" width="800" height="500" frameborder="0"></iframe>
+                <h1>CHI <?= $city['name']; ?></h1>
+                <div class="city-indice">
+                    <h2><?= $city['value'] ?><?php $this->view('includes/city-trend', ['city' => $city['city_id']]); ?></h2>
+                </div>
 
             </div>
 
         </div>
+
+        <div class="embed-responsive embed-responsive-16by9">
+
+            <iframe src="http://happycity.xyz:3000/dashboard-solo/db/hacktm?panelId=<?=$city['panel_id'];?>&fullscreen&from=now-6m&to=now&theme=light" width="800" height="600" frameborder="0"></iframe>
+
+        </div>
+
+
 
         <?php $this->view('includes/credits'); ?>
 
