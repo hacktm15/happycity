@@ -96,5 +96,14 @@ class Application extends CI_Controller {
         ];
     }
 
+    public function getCityPanels()
+    {
+        $panels['timisoara'] = 1;
+        $panels['brasov'] = 2;
+        $panels['constanta'] = 3;
+        $panels['oradea'] = 4;
+
+        return $panels;
+    }
 
 }

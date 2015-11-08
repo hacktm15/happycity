@@ -54,3 +54,6 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['timisoara'] = 'city/index';
+$route['brasov'] = 'city/index';
+$route['constanta'] = 'city/index';
+$route['oradea'] = 'city/index';
