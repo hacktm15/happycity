@@ -123,12 +123,11 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
         </div>
     </div>
 
-
-        <div class="embed-responsive embed-responsive-16by9">
-
-            <iframe src="http://happycity.xyz:3000/dashboard-solo/db/hacktm?panelId=1&fullscreen&from=now-6m&to=now&theme=light" width="800" height="600" frameborder="0"></iframe>
-
+    <div class="row">
+        <div class="col-md-12">
+            <iframe src="http://happycity.xyz:3000/dashboard-solo/db/hacktm?panelId=1&fullscreen&from=now-6m&to=now&theme=light" width="100%" height="200" frameborder="0"></iframe>
         </div>
+    </div>
 
 
     <?php $this->view('includes/credits'); ?>
