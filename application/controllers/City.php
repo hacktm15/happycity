@@ -12,11 +12,11 @@ class City extends Application {
         $panel = $this->getCityPanels($cityName);
         $city += $panel;
         
-        $city['id'] = $cityName;
+        $city['city_id'] = $cityName;
 
         $data['city'] = $city;
 
-        $this->load->view('main', $data + $this->sharedData);
+        $this->load->view('city', $data + $this->sharedData);
     }
 
 } // END class

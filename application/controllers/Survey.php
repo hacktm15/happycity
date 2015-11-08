@@ -90,7 +90,7 @@ class Survey extends Application {
 
     private function getRand($city)
     {
-        return ((int)rand(1,5) + strlen($city) + date('m') + date('H')) % 5 + 1;
+        return ((int)rand(1,2) + strlen($city) + date('m') + date('H')) % 5 + 1;
     }
 
     private function getLocation( $location )

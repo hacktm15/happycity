@@ -44,7 +44,7 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
 
 		<div class="col-md-6">
 			<div class="row">
-                <div class="col-md-6 city-label"><h2>Timișoara</h2></div>
+                <div class="col-md-6 city-label"><h2><a href="/timisoara">Timișoara</a></h2></div>
                 <div class="col-md-6 city-indice">
                     <h2><?= $cities['Timisoara']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'Timisoara']); ?></h2>
                 </div>
@@ -56,7 +56,7 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
 
 		<div class="col-md-6">
 			<div class="row">
-                <div class="col-md-6 city-label"><h2>Brașov</h2></div>
+                <div class="col-md-6 city-label"><h2><a href="/brasov">Brașov</h2></div>
                 <div class="col-md-6 city-indice">
                     <h2><?= $cities['Brasov']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'Brasov']); ?></h2>
                 </div>
@@ -72,7 +72,7 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
 
 		<div class="col-md-6">
 			<div class="row">
-                <div class="col-md-6 city-label"><h2>Constanța</h2></div>
+                <div class="col-md-6 city-label"><h2><a href="/constanta">Constanța</a></h2></div>
                 <div class="col-md-6 city-indice">
                     <h2><?= $cities['Constanta']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'Constanta']); ?></h2>
                 </div>
@@ -84,7 +84,7 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
 
 		<div class="col-md-6">
 			<div class="row">
-                <div class="col-md-6 city-label"><h2>Oradea</h2></div>
+                <div class="col-md-6 city-label"><h2><a href="/oradea">Oradea</a></h2></div>
                 <div class="col-md-6 city-indice">
                     <h2><?= $cities['Oradea']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'Oradea']); ?></h2>
                 </div>
@@ -96,26 +96,34 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
 
     </div>
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Oras</th>
-                <th>Indice</th>
-                <th>Precedent</th>
-                <th>Variatie</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($cities as $cityName => $values): ?>
-                <tr <?=$cityName=='national' ? 'class="info"' : '' ?>>
-                    <td><?=ucfirst($cityName); ?></td>
-                    <td><?=$values['value']; ?></td>
-                    <td><?=$values['previous_value']; ?></td>
-                    <td><?=sprintf('%+0.2f', $values['variation']); ?>%</td>
+    <div class="row">
+        <div class="col-md-12">
+
+            <h2>Distributia indicelui CHI pe orase</h2>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Oras</th>
+                    <th>CHI Curent</th>
+                    <th>CHI Precedent</th>
+                    <th>Variatie (procent)</th>
                 </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
+                </thead>
+                <tbody>
+                <?php foreach ($cities as $cityName => $values): ?>
+                    <tr <?=$cityName=='national' ? 'class="info"' : '' ?>>
+                        <td><?=ucfirst($cityName); ?></td>
+                        <td><?=$values['value']; ?></td>
+                        <td><?=$values['previous_value']; ?></td>
+                        <td><?=sprintf('%+0.2f', $values['variation']); ?>%</td>
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
 
     <?php $this->view('includes/credits'); ?>
 

@@ -162,6 +162,16 @@ p.indice {
     color: #ef5333;
 }
 
+.city-label a {
+    color: #ef5333;
+    text-decoration: none;
+}
+
+.city-label a:hover {
+    color: #E84725;
+    text-decoration: none;
+}
+
 .btn-group label {
     width: 10em;
 }
