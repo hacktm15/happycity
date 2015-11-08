@@ -59,6 +59,11 @@ class Survey extends Application {
         $this->load->view('survey/thankyou', $this->sharedData);
     }
 
+    /**
+     * Seed with something like
+     *
+     * curl -N "http://192.168.99.100/survey/seed?city=Barlad"
+     */
     public function seed()
     {
         if (empty($_GET['city']))
@@ -77,7 +82,7 @@ class Survey extends Application {
         ];
 
         for ($i=1; $i<=7; $i++)
-        $questions[$i] = $this->getRand($tags['city']);
+            $questions[$i] = $this->getRand($tags['city']);
 
         foreach ($questions as $id => $value)
             $this->Persist_model->data($value, $tags + ['question_id' => $id]);
