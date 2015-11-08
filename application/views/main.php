@@ -1,6 +1,5 @@
 <?php $this->view('includes/header'); ?>
 <?php $this->view('includes/navigation'); ?>
-    
 <div class="jumbotron">
     <div class="container">
 
@@ -46,7 +45,7 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
 			<div class="row">
                 <div class="col-md-6 city-label"><h2><a href="/timisoara">Timișoara</a></h2></div>
                 <div class="col-md-6 city-indice">
-                    <h2><?= $cities['timisoara']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'Timisoara']); ?></h2>
+                    <h2><?= $cities['timisoara']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'timisoara']); ?></h2>
                 </div>
 			</div>
 			<div class="embed-responsive embed-responsive-16by9">
@@ -58,7 +57,7 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
 			<div class="row">
                 <div class="col-md-6 city-label"><h2><a href="/brasov">Brașov</h2></div>
                 <div class="col-md-6 city-indice">
-                    <h2><?= $cities['brasov']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'Brasov']); ?></h2>
+                    <h2><?= $cities['brasov']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'brasov']); ?></h2>
                 </div>
 			</div>
 			<div class="embed-responsive embed-responsive-16by9">
@@ -74,7 +73,7 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
 			<div class="row">
                 <div class="col-md-6 city-label"><h2><a href="/constanta">București</a></h2></div>
                 <div class="col-md-6 city-indice">
-                    <h2><?= $cities['bucuresti']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'Constanta']); ?></h2>
+                    <h2><?= $cities['bucuresti']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'bucuresti']); ?></h2>
                 </div>
 			</div>
 			<div class="embed-responsive embed-responsive-16by9">
@@ -86,7 +85,7 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
 			<div class="row">
                 <div class="col-md-6 city-label"><h2><a href="/oradea">Cluj Napoca</a></h2></div>
                 <div class="col-md-6 city-indice">
-                    <h2><?= $cities['cluj-napoca']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'Oradea']); ?></h2>
+                    <h2><?= $cities['cluj-napoca']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'cluj-napoca']); ?></h2>
                 </div>
 			</div>
 			<div class="embed-responsive embed-responsive-16by9">
