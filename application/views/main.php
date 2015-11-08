@@ -46,11 +46,11 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
 			<div class="row">
                 <div class="col-md-6 city-label"><h2><a href="/timisoara">Timișoara</a></h2></div>
                 <div class="col-md-6 city-indice">
-                    <h2><?= $cities['Timisoara']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'Timisoara']); ?></h2>
+                    <h2><?= $cities['timisoara']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'Timisoara']); ?></h2>
                 </div>
 			</div>
 			<div class="embed-responsive embed-responsive-16by9">
-	            <iframe src="http://happycity.xyz:3000/dashboard-solo/db/hacktm?panelId=1&fullscreen&from=now-6m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
+	            <iframe src="http://happycity.xyz:3000/dashboard-solo/db/hacktm?panelId=2&fullscreen&from=now-6m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
 			</div>
 		</div>
 
@@ -58,11 +58,11 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
 			<div class="row">
                 <div class="col-md-6 city-label"><h2><a href="/brasov">Brașov</h2></div>
                 <div class="col-md-6 city-indice">
-                    <h2><?= $cities['Brasov']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'Brasov']); ?></h2>
+                    <h2><?= $cities['brasov']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'Brasov']); ?></h2>
                 </div>
 			</div>
 			<div class="embed-responsive embed-responsive-16by9">
-	            <iframe src="http://happycity.xyz:3000/dashboard-solo/db/hacktm?panelId=2&fullscreen&from=now-6m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
+	            <iframe src="http://happycity.xyz:3000/dashboard-solo/db/hacktm?panelId=4&fullscreen&from=now-6m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
 			</div>
 		</div>
 
@@ -72,9 +72,9 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
 
 		<div class="col-md-6">
 			<div class="row">
-                <div class="col-md-6 city-label"><h2><a href="/constanta">Constanța</a></h2></div>
+                <div class="col-md-6 city-label"><h2><a href="/constanta">București</a></h2></div>
                 <div class="col-md-6 city-indice">
-                    <h2><?= $cities['Constanta']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'Constanta']); ?></h2>
+                    <h2><?= $cities['bucuresti']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'Constanta']); ?></h2>
                 </div>
 			</div>
 			<div class="embed-responsive embed-responsive-16by9">
@@ -84,13 +84,13 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
 
 		<div class="col-md-6">
 			<div class="row">
-                <div class="col-md-6 city-label"><h2><a href="/oradea">Oradea</a></h2></div>
+                <div class="col-md-6 city-label"><h2><a href="/oradea">Cluj Napoca</a></h2></div>
                 <div class="col-md-6 city-indice">
-                    <h2><?= $cities['Oradea']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'Oradea']); ?></h2>
+                    <h2><?= $cities['cluj-napoca']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'Oradea']); ?></h2>
                 </div>
 			</div>
 			<div class="embed-responsive embed-responsive-16by9">
-				<iframe src="http://happycity.xyz:3000/dashboard-solo/db/hacktm?panelId=4&fullscreen&from=now-6m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
+				<iframe src="http://happycity.xyz:3000/dashboard-solo/db/hacktm?panelId=5&fullscreen&from=now-6m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
 			</div>
 		</div>
 
