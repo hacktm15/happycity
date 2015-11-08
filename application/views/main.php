@@ -7,14 +7,14 @@
 		<div class="row">
 
             <div class="col-md-4 text-center">
-                <p class="indice"><?=$cities['national']['value']; ?></p>
+                <p class="indice"><?=empty($cities['national']['value']) ? '??' : $cities['national']['value']; ?></p>
                 <p class="indice-trend">
-                    <?php if ($cities['national']['variation'] > 0): ?>
-                        <span class="trend-positive"><i class="fa fa-arrow-up"></i> <?=$cities['national']['variation']; ?>%</span> față de săptămâna trecută
-                    <?php elseif ($cities['national']['variation'] < 0): ?>
-                        <span class="trend-negative"><i class="fa fa-arrow-down"></i> <?=$cities['national']['variation']; ?>%</span> față de săptămâna trecută
+                    <?php if (isset($cities['national']) && $cities['national']['variation'] > 0): ?>
+                        <span class="trend-positive"><i class="fa fa-arrow-up"></i> <?=empty($cities['national']['variation']) ? '--' : $cities['national']['variation']; ?>%</span> față de săptămâna trecută
+                    <?php elseif (isset($cities['national']) && $cities['national']['variation'] < 0): ?>
+                        <span class="trend-negative"><i class="fa fa-arrow-down"></i> <?=empty($cities['national']['variation']) ? '--' : $cities['national']['variation']; ?>%</span> față de săptămâna trecută
                     <?php else: ?>
-                        <span class="trend-positive"><i class="fa fa-arrow-right"></i> <?=$cities['national']['variation']; ?>%</span> față de săptămâna trecută
+                        <span class="trend-positive"><i class="fa fa-arrow-right"></i> <?=empty($cities['national']['variation']) ? '--' : $cities['national']['variation']; ?>%</span> față de săptămâna trecută
                     <?php endif; ?>
                 </p>
             </div>
@@ -67,30 +67,7 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
 		</div>
 
     </div>
-<?php /*
-    <div class="row">
 
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-6 city-label"><h2>București</h2></div>
-                <div class="col-md-6 city-indice"><h2><?= $cities['Bucuresti']['value'] ?></h2></div>
-            </div>
-            <div class="embed-responsive embed-responsive-4by3">
-                <iframe src="http://happycity.xyz:3000/dashboard-solo/db/hacktm?panelId=1&fullscreen&from=now-15m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-6 city-label"><h2>Cluj-Napoca</h2></div>
-                <div class="col-md-6 city-indice"><h2><?= $cities['Cluj']['value'] ?></h2></div>
-            </div>
-            <div class="embed-responsive embed-responsive-4by3">
-                <iframe src="http://happycity.xyz:3000/dashboard-solo/db/hacktm?panelId=1&fullscreen&from=now-15m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
-            </div>
-        </div>
-    </div>
-*/ ?>
     <div class="row">
 
 		<div class="col-md-6">

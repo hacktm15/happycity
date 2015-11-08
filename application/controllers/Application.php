@@ -55,7 +55,11 @@ class Application extends CI_Controller {
 
         $q =  $this->config->item('influx_endpoint_read') . http_build_query($params);
         $cities = array();
-        $response = json_decode(file_get_contents($q), true)['results'][0]['series'];
+        $responseJson = json_decode(file_get_contents($q), true);
+        if(empty($responseJson['results'][0]['series']))
+            return array();
+
+        $response = ['results'][0]['series'];
 
         foreach ($response as $val) {
             if (!empty($val['tags']['city'])) {
