@@ -6,11 +6,9 @@ class Survey extends Application {
 
     public function index()
     {
-        if (!isset($this->sharedData['userData']['id'])) {
+        if (!isset($this->sharedData['userData']['id']))
             redirect('https://' . $_SERVER['HTTP_HOST']);
-            return;
-        }
-        $data = array();
+
         $data = ['questions' => $this->config->item('questions')];
         $data['friends'] = $this->getFbFriends();
 
@@ -36,7 +34,7 @@ class Survey extends Application {
         $userData = $this->sharedData['userData'];
 
         if (empty($userData['id'])) {
-            // $userData = ['id' => '10153707745539524', 'location' => ['name' => 'Timișoara, Romania']];
+            //$userData = ['id' => '10153707745539524', 'location' => ['name' => 'Timișoara, Romania']];
             redirect('http://' . $_SERVER['HTTP_HOST'] . '/survey');
         }
         $tags = [
