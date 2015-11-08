@@ -71,7 +71,10 @@ class Application extends CI_Controller {
 
                 $cities[$val['tags']['city']]['value'] = round($currentValue, 1);
                 $cities[$val['tags']['city']]['previous_value'] = round($previousValue, 1);
-                $cities[$val['tags']['city']]['variation'] = round(($currentValue / $previousValue) * 100 - 100, 1);
+                if($previousValue != 0)
+                    $cities[$val['tags']['city']]['variation'] = round(($currentValue / $previousValue) * 100 - 100, 1);
+                else
+                    $cities[$val['tags']['city']]['variation'] = null;
             }
         }
 
