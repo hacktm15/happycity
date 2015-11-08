@@ -50,7 +50,7 @@ class Application extends CI_Controller {
 
     public function getCities($value='')
     {
-        $params['q'] = 'SELECT mean("value") AS "value" FROM "metric_name" WHERE time > now() - 2h GROUP BY city, time(1h);';
+        $params['q'] = 'SELECT mean("value") AS "value" FROM "metric_name" WHERE time > now() - 1m GROUP BY city, time(1m);';
         $params['db'] = 'test';
 
         $q =  $this->config->item('influx_endpoint_read') . http_build_query($params);
