@@ -99,7 +99,7 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
     <div class="row">
         <div class="col-md-12">
 
-            <h2>Distributia indicelui CHI pe orase</h2>
+            <h2>Distribuția indicelui CHI pe orașe</h2>
             <table class="table">
                 <thead>
                 <tr>
