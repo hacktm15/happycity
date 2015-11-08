@@ -5,11 +5,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * Questions array. Varies from 1 => 'totally disagree' to 5 => 'totally agree'
  */
 $config['questions'] = [
-    1 => '%s este administrat intr-un mod corespunzator.',
-    2 => 'In %s infrastructura rutiera este functionala.',
-    3 => 'Imi face placere sa ma plimb prin %s.',
-    4 => 'Scolile din %s sunt potrivite pentru educatia copiiilor mei.',
-    5 => 'Din punct de vedere tehnologic, %s este genial.'
+    1 => '%s merita sa fie capitala culturala europeana.',
+    2 => 'In ultimele 6 luni am vazut un progres al dezvoltarii infrastructurii in %s.',
+    3 => 'In %s exista un numar suficient de scoli si licee pentru copiii mei (sau viitori copii).',
+    4 => 'Stiu exact care sunt oportunitatile de dezoltare a orasului %s din punct de vedere tehnologic.',
+    5 => 'Spatiile verzi din %s pe care le vizitez sunt foarte bine ingrijite.',
+    6 => 'Stiu exact care sunt oportunitatile de dezvoltare profesionala pe care le am in %s.',
+    7 => 'Monumetele istorice sunt bine promovate (luminate, reconditionate, explicate, populate).',
 ];
 
 $config['influx_endpoint_read'] = 'http://happycity.xyz:8086/query?';

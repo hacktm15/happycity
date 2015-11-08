@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Happy City</title>
+    <title>Happy City Index - Un indice care măsoară succesul, bunăstarea, progresul unui oraș. Cu alte cuvinte, măsurăm fericirea.</title>
     <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="/assets/css/main.css" rel="stylesheet">

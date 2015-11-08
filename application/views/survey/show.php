@@ -25,24 +25,24 @@
             <?php foreach ($questions as $id => $text): ?>
                 <div class="row row-form">
                     <div class="col-xs-12">
-                        <h2><?=$id; ?>. <?= ucfirst(sprintf($text, $userData['location']['name'])); ?></h2>
+                        <h2><?=$id; ?>. <?= ucfirst(sprintf($text, 'Timisoara')); ?></h2>
                     </div>
                     <div class="col-xs-12">
                         <div class="btn-group" data-toggle="buttons">
                           <label class="btn btn-default">
-                            <input name="questions[<?=$id; ?>]" value="1" type="radio" autocomplete="off">În niciun caz
+                            <input name="questions[<?=$id; ?>]" value="1" type="radio" autocomplete="off">Dezacord total
                           </label>
                           <label class="btn btn-default">
-                            <input name="questions[<?=$id; ?>]" value="2" type="radio" autocomplete="off">Nu
+                            <input name="questions[<?=$id; ?>]" value="2" type="radio" autocomplete="off">Dezacord partial
                           </label>
                           <label class="btn btn-default">
-                            <input name="questions[<?=$id; ?>]" value="3" type="radio" autocomplete="off">Poate
+                            <input name="questions[<?=$id; ?>]" value="3" type="radio" autocomplete="off">Neutru
                           </label>
                           <label class="btn btn-default">
-                            <input name="questions[<?=$id; ?>]" value="4" type="radio" autocomplete="off">Da
+                            <input name="questions[<?=$id; ?>]" value="4" type="radio" autocomplete="off">Acord partial
                           </label>
                           <label class="btn btn-default">
-                            <input name="questions[<?=$id; ?>]" value="5" type="radio" autocomplete="off">Cu siguranţă
+                            <input name="questions[<?=$id; ?>]" value="5" type="radio" autocomplete="off">Acord total
                           </label>
                         </div>
                     </div>
