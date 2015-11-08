@@ -102,13 +102,16 @@ class Application extends CI_Controller {
         ];
     }
 
-    public function getCityPanels()
+    public function getCityPanels($cityId = false)
     {
-        $panels['timisoara'] = 1;
-        $panels['brasov'] = 2;
-        $panels['constanta'] = 3;
-        $panels['oradea'] = 4;
+        $panels['timisoara'] = array('panel_id' => 2, 'name' => "Timișoara");
+        $panels['bucuresti'] = array('panel_id' => 3, 'name' => "București");
+        $panels['brasov'] = array('panel_id' => 4, 'name' => "Brașov");
+        $panels['Cluj'] = array('panel_id' => 5, 'name' => "Cluj");
 
+        if ($cityId) {
+            return $panels[$cityId];
+        }
         return $panels;
     }
 

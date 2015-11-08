@@ -6,9 +6,15 @@ class City extends Application {
 
     public function index()
     {
-        $data['city'] = $this->uri->segment(1);
-        $data['cities'] = $this->getCities();
-        $data['panel_id'] = $this->getCityPanels()[$data['city']];
+        $cityName = $this->uri->segment(1);
+        $city = $this->getCities()[$cityName];
+
+        $panel = $this->getCityPanels($cityName);
+        $city += $panel;
+        
+        $city['id'] = $cityName;
+
+        $data['city'] = $city;
 
         $this->load->view('main', $data + $this->sharedData);
     }
