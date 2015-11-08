@@ -10,9 +10,6 @@ RUN sudo a2enmod ssl
 RUN sudo ln -s /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-enabled/default-ssl.conf
 RUN sudo /etc/init.d/apache2 restart
 
-RUN mysql -u root -e "grant all privileges on happycity.* to hacktm@'95.76.223.151' identified by 'Aethahg1';" mysql
-RUN mysql -u root -e "flush privileges;" mysql
-
 EXPOSE 80 443 3306
 
 CMD ["/run.sh"]

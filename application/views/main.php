@@ -21,7 +21,8 @@
 
             <div class="col-md-8">
                 <h1>City Happiness Index</h1>
-                <p>CHI este indicele fericirii. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt neque nunc, sed dapibus odio ullamcorper pulvinar.</p>
+                <p>CHI este un indice alternativ la metodele tradiționale care măsoară succesul, bunăstarea, progresul unui oraș.
+Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
                 <?php $this->view('includes/friends'); ?>
 
                 <p>

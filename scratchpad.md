@@ -8,6 +8,10 @@
     docker run -d -p 80:80 -p 3306:3306 -p 443:443 -v ~/Development/happycity:/app dlucian/happycity-app
         # create dockers/grafana/Dockerfile
 
+SSH connect to docker:
+
+    docker exec -i -t f954fea184c8 bash
+
 ### Grafana
 
     docker build -t dlucian/happycity-grafana .
