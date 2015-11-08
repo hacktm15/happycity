@@ -48,7 +48,7 @@ class Application extends CI_Controller {
         return $friends;        
     }
 
-    public function getCities($value='')
+    public function getCities()
     {
         $params['q'] = 'SELECT mean("value") AS "value" FROM "metric_name" WHERE time > now() - 1m GROUP BY city, time(1m);';
         $params['db'] = 'test';
