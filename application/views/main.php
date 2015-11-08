@@ -100,8 +100,8 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
                     <h2><?= $cities['Constanta']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'Constanta']); ?></h2>
                 </div>
 			</div>
-			<div class="embed-responsive embed-responsive-4by3">
-				<iframe src="http://happycity.xyz:3000/dashboard-solo/db/hacktm?panelId=4&fullscreen&from=now-15m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe src="http://happycity.xyz:3000/dashboard-solo/db/hacktm?panelId=3&fullscreen&from=now-6m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
 			</div>
 		</div>
 
@@ -112,8 +112,8 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
                     <h2><?= $cities['Oradea']['value'] ?><?php $this->view('includes/city-trend', ['city' => 'Oradea']); ?></h2>
                 </div>
 			</div>
-			<div class="embed-responsive embed-responsive-4by3">
-				<iframe src="http://happycity.xyz:3000/dashboard-solo/db/hacktm?panelId=5&fullscreen&from=now-15m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe src="http://happycity.xyz:3000/dashboard-solo/db/hacktm?panelId=4&fullscreen&from=now-6m&to=now&theme=light" width="450" height="100" frameborder="0"></iframe>
 			</div>
 		</div>
 
