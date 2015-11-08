@@ -57,3 +57,4 @@ $route['timisoara'] = 'city/index';
 $route['bucuresti'] = 'city/index';
 $route['brasov'] = 'city/index';
 $route['cluj'] = 'city/index';
+$route['national'] = 'city/index';

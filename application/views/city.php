@@ -3,7 +3,7 @@
 
 
     <div class="container container-anim container-fadeout">
-        <a href="/"><img src="/assets/img/logo.png" alt="Happy City" class="img-responsive center-block"></a>
+        <a href="/"><img src="/assets/img/logo.png" alt="Happy City" class=" center-block" width="200"></a>
 
         <div class="row">
 

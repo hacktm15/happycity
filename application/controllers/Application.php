@@ -108,6 +108,7 @@ class Application extends CI_Controller {
         $panels['brasov'] = array('panel_id' => 4, 'name' => "Brașov");
         $panels['bucuresti'] = array('panel_id' => 3, 'name' => "București");
         $panels['cluj'] = array('panel_id' => 5, 'name' => "Cluj");
+        $panels['national'] = array('panel_id' => 1, 'name' => "National");
 
         if ($cityId) {
             return $panels[$cityId];
