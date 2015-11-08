@@ -14,6 +14,9 @@ class Persist_model {
 
     public function data( $value, $tags = array() )
     {
+        if (!empty($tags['city']))
+            $tags['city'] = strtolower($tags['city']);
+
         $payload = sprintf("%s,%s value=%d", $this->metricName, http_build_query($tags,'',','), $value );
 
         $opts = array('http' =>
