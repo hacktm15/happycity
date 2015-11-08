@@ -96,6 +96,27 @@ Cu alte cuvinte, <strong>măsurăm fericirea</strong>.</p>
 
     </div>
 
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Oras</th>
+                <th>Indice</th>
+                <th>Precedent</th>
+                <th>Variatie</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($cities as $cityName => $values): ?>
+                <tr <?=$cityName=='national' ? 'class="info"' : '' ?>>
+                    <td><?=ucfirst($cityName); ?></td>
+                    <td><?=$values['value']; ?></td>
+                    <td><?=$values['previous_value']; ?></td>
+                    <td><?=sprintf('%+0.2f', $values['variation']); ?>%</td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+
     <?php $this->view('includes/credits'); ?>
 
 </div> <!-- /container -->
