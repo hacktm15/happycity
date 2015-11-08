@@ -50,7 +50,7 @@ class Logincallback extends CI_Controller {
 
             $this->saveFbData($response);
         }
-        redirect('http://' . $_SERVER['HTTP_HOST'] . '/survey');
+        redirect('https://' . $_SERVER['HTTP_HOST'] . '/survey');
         return;
     }
 
