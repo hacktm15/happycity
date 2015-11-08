@@ -59,6 +59,35 @@ class Survey extends Application {
         $this->load->view('survey/thankyou', $this->sharedData);
     }
 
+    public function seed()
+    {
+        if (empty($_GET['city']))
+            die('Hey! Missing ?city=Hurgada');
+
+        $this->load->model('Persist_model');
+
+        $this->Persist_model->init(
+            $this->config->item('influx_endpoint'),
+            $this->config->item('influx_metric')
+        );
+
+        $tags = [
+            'fb_id' => '10153707745539524',
+            'city' => $_GET['city']
+        ];
+
+        for ($i=1; $i<=7; $i++)
+        $questions[$i] = $this->getRand($tags['city']);
+
+        foreach ($questions as $id => $value)
+            $this->Persist_model->data($value, $tags + ['question_id' => $id]);
+    }
+
+    private function getRand($city)
+    {
+        return ((int)rand(1,5) + strlen($city) + date('m') + date('H')) % 5 + 1;
+    }
+
     private function getLocation( $location )
     {
         return str_replace([', Romania','ș','ț','ă','î','â'], ['','s','t','a','i','a'], $location);
