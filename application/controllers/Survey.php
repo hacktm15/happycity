@@ -49,7 +49,7 @@ class Survey extends Application {
             $this->Persist_model->data($value, $tags + ['question_id' => $id]);
 
 
-        redirect('http://' . $_SERVER['HTTP_HOST'] . '/survey/thankyou');
+        redirect('https://' . $_SERVER['HTTP_HOST'] . '/survey/thankyou');
     }
 
     public function thankyou()
