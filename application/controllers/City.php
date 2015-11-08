@@ -9,8 +9,7 @@ class City extends Application {
         $data['city'] = $this->uri->segment(1);
         $data['cities'] = $this->getCities();
         $data['panel_id'] = $this->getCityPanels()[$data['city']];
-
-        $this->load->view('main', $data + $this->sharedData);
+        $this->load->view('city', $data + $this->sharedData);
     }
 
 } // END class
