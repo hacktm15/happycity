@@ -7,7 +7,8 @@ class City extends Application {
     public function index()
     {
         $cityName = $this->uri->segment(1);
-        $city = $this->getCities()[$cityName];
+        $cities = $this->getCities();
+        $city = $cities[$cityName];
 
         $panel = $this->getCityPanels($cityName);
         $city += $panel;
@@ -15,6 +16,7 @@ class City extends Application {
         $city['city_id'] = $cityName;
 
         $data['city'] = $city;
+        $data['cities'] = $cities;
 
         $this->load->view('city', $data + $this->sharedData);
     }
